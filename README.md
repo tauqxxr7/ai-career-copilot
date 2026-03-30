@@ -80,6 +80,23 @@ Many students know how to code but struggle with:
 
 \- Clean web interface
 
+## Track 2: MCP-Style External Data Integration
+
+This project connects an AI agent to an external job data source and uses that information in its final response.
+
+### Flow
+User Resume → Backend API → External Job API → Gemini → Career Guidance
+
+### External Tool Used
+- Remotive Jobs API
+
+### What the agent does
+- Analyzes the resume
+- Fetches live job data
+- Suggests relevant roles
+- Identifies missing skills
+- Generates roadmap and interview prep
+
 
 
 \### 🔮 Planned Features
@@ -509,4 +526,3 @@ This project can be expanded into:
 
 
 This project is built for learning, innovation, and hackathon submission purposes.
-
