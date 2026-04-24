@@ -85,6 +85,8 @@ ai-career-copilot/
   frontend/
     app/
   google-adk-agent/
+  docs/
+    screenshots/
   README.md
 ```
 
@@ -102,7 +104,7 @@ cd ai-career-copilot
 ```bash
 cd backend
 npm install
-cp .env.example .env
+copy .env.example .env
 npm run dev
 ```
 
@@ -113,7 +115,7 @@ Open a new terminal:
 ```bash
 cd frontend
 npm install
-cp .env.example .env.local
+copy .env.example .env.local
 npm run dev
 ```
 
@@ -152,17 +154,17 @@ Request body:
 
 ## Screenshots
 
-### Landing Page
+### Dashboard Overview
 
-`Add screenshot: docs/screenshots/home.png`
+![AI Career Copilot Dashboard](./docs/screenshots/copilot-dashboard.png)
 
-### Resume Analysis Output
+### Policy Response Flow
 
-`Add screenshot: docs/screenshots/analysis.png`
+![AI Career Copilot Policy Response](./docs/screenshots/copilot-policy-response.png)
 
-### Roadmap / Recommendation State
+### Summarization Demo
 
-`Add screenshot: docs/screenshots/roadmap.png`
+![AI Career Copilot Summary Demo](./docs/screenshots/copilot-summary-demo.png)
 
 ## Demo Notes
 
