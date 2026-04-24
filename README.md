@@ -1,528 +1,182 @@
-\# 🚀 AI Career Copilot
+# AI Career Copilot
 
+> GenAI career assistant for resume analysis, interview prep, roadmap generation, and skill growth.
 
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-111827?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![Gemini](https://img.shields.io/badge/Gemini_API-1A73E8?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
+[![Render](https://img.shields.io/badge/Render-111827?style=for-the-badge&logo=render&logoColor=46E3B7)](https://render.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-\*\*AI Career Copilot\*\* is a GenAI-powered career assistant built for students, freshers, and early professionals.
+[![Source Code](https://img.shields.io/badge/Source_Code-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tauqxxr7/ai-career-copilot)
+[![Backend API](https://img.shields.io/badge/Backend_API-Live-46E3B7?style=for-the-badge)](https://ai-career-copilot-45sc.onrender.com)
 
+## Overview
 
+AI Career Copilot is a full-stack AI application that acts like a practical career co-pilot for students, freshers, and early professionals. Instead of only critiquing a resume, it turns a profile summary into structured guidance users can act on immediately.
 
-It helps users turn a simple resume or profile summary into:
+The app analyzes resume content, identifies strengths and skill gaps, suggests interview questions, generates a short learning roadmap, and recommends project directions. It is designed as a product-focused AI workflow, not just a single prompt wrapped in a UI.
 
+## What It Does
 
+- Resume and profile analysis
+- Strength and weakness identification
+- Skill-gap detection
+- Technical and behavioral interview prep
+- 3-month roadmap generation
+- Project recommendations based on current profile
+- External job-data enrichment using Remotive Jobs API
 
-\- Resume Analysis
+## Why It Stands Out
 
-\- Strengths \& Weaknesses
+- Product-oriented AI workflow instead of a one-off chatbot response
+- Full-stack architecture with frontend, backend, API integration, and AI orchestration
+- Useful for real users preparing for placements, internships, and early-career roles
+- Strong portfolio signal for AI application engineering and GenAI product thinking
 
-\- Skills Assessment
+## Architecture
 
-\- Interview Questions
+```text
+User Resume Input
+  -> Next.js frontend
+  -> Express API
+  -> Gemini analysis pipeline
+  -> Optional external jobs data via Remotive
+  -> Structured career guidance output
+```
 
-\- 3-Month Learning Roadmap
+## Tech Stack
 
-\- Recommended Projects
+### Frontend
 
+- Next.js
+- React
+- Tailwind CSS
+- TypeScript-ready project structure
 
+### Backend
 
-\---
+- Node.js
+- Express.js
 
+### AI and Integrations
 
-
-\## 🌟 Problem It Solves
-
-
-
-Many students know how to code but struggle with:
-
-
-
-\- Writing a strong resume
-
-\- Understanding their skill gaps
-
-\- Preparing for interviews
-
-\- Knowing what to learn next
-
-
-
-\*\*AI Career Copilot\*\* solves this by acting like a \*\*personal AI career mentor\*\*.
-
-
-
-\---
-
-
-
-\## 💡 Features
-
-
-
-\### ✅ Current MVP
-
-\- Paste resume / profile summary
-
-\- AI-powered resume analysis
-
-\- Strengths identification
-
-\- Weaknesses detection
-
-\- Skills assessment
-
-\- Technical interview questions
-
-\- Behavioral interview questions
-
-\- 3-month roadmap
-
-\- Project recommendations
-
-\- Clean web interface
-
-## Track 2: MCP-Style External Data Integration
-
-This project connects an AI agent to an external job data source and uses that information in its final response.
-
-### Flow
-User Resume → Backend API → External Job API → Gemini → Career Guidance
-
-### External Tool Used
+- Gemini API
 - Remotive Jobs API
 
-### What the agent does
-- Analyzes the resume
-- Fetches live job data
-- Suggests relevant roles
-- Identifies missing skills
-- Generates roadmap and interview prep
+### Deployment
 
+- Render for backend
+- Vercel for frontend
 
+## Project Structure
 
-\### 🔮 Planned Features
-
-\- PDF Resume Upload
-
-\- ATS Score Generator
-
-\- Resume Rewriter
-
-\- Interview Answer Generator
-
-\- Role-Based Career Guidance
-
-\- LinkedIn Profile Review
-
-
-
-\---
-
-
-
-\## 🧠 How It Works
-
-
-
-\### Flow:
-
-User Input → Frontend → Backend API → Google Gemini → Structured Career Output
-
-
-
-\### AI Roles Used:
-
-\- \*\*Resume Analyzer\*\*
-
-\- \*\*Interview Coach\*\*
-
-\- \*\*Roadmap Planner\*\*
-
-
-
-This creates a \*\*multi-agent inspired GenAI workflow\*\*.
-
-
-
-\---
-
-
-
-\## 🏗️ Tech Stack
-
-
-
-\### Frontend
-
-\- Next.js
-
-\- React
-
-\- CSS
-
-
-
-\### Backend
-
-\- Node.js
-
-\- Express.js
-
-
-
-\### AI Layer
-
-\- Google Gemini API
-
-
-
-\### Tools
-
-\- Git
-
-\- GitHub
-
-\- VS Code
-
-\- Postman
-
-
-
-\### Deployment
-
-\- Render (Backend)
-
-\- Vercel (Frontend)
-
-
-
-\---
-
-
-
-\## 📂 Project Structure
-
-
-
-```bash
-
+```text
 ai-career-copilot/
-
-│
-
-├── backend/
-
-│   ├── src/
-
-│   ├── server.js
-
-│   ├── package.json
-
-│   └── .env
-
-│
-
-├── frontend/
-
-│   ├── app/
-
-│   ├── public/
-
-│   ├── package.json
-
-│   └── next.config.ts
-
-│
-
-└── README.md
-
+  backend/
+    src/
+      config/
+      controllers/
+      middlewares/
+      routes/
+      services/
+    server.js
+  frontend/
+    app/
+  google-adk-agent/
+  README.md
 ```
 
+## Local Setup
 
-
-\---
-
-
-
-\## ⚙️ Local Setup
-
-
-
-\### 1️⃣ Clone the Repository
-
-
+### 1. Clone the repository
 
 ```bash
-
-git clone https://github.com/YOUR-USERNAME/ai-career-copilot.git
-
+git clone https://github.com/tauqxxr7/ai-career-copilot.git
 cd ai-career-copilot
-
 ```
 
-
-
-\---
-
-
-
-\## 🔧 Backend Setup
-
-
+### 2. Start the backend
 
 ```bash
-
 cd backend
-
 npm install
-
+cp .env.example .env
+npm run dev
 ```
 
-
-
-Create a `.env` file inside `backend`:
-
-
-
-```env
-
-GEMINI\_API\_KEY=your\_google\_gemini\_api\_key
-
-PORT=5000
-
-```
-
-
-
-Start backend:
-
-
-
-```bash
-
-node server.js
-
-```
-
-
-
-Backend runs on:
-
-
-
-```bash
-
-http://localhost:5000
-
-```
-
-
-
-\---
-
-
-
-\## 🎨 Frontend Setup
-
-
+### 3. Start the frontend
 
 Open a new terminal:
 
-
-
 ```bash
-
 cd frontend
-
 npm install
-
+cp .env.example .env.local
 npm run dev
-
 ```
 
+### 4. Open the app
 
+- Frontend: `http://localhost:3000`
+- Backend: `http://localhost:5000`
 
-Frontend runs on:
+## Environment Variables
 
+### `backend/.env`
 
-
-```bash
-
-http://localhost:3000
-
+```env
+GEMINI_API_KEY=your_gemini_api_key
+PORT=5000
+REMOTIVE_API_BASE_URL=https://remotive.com/api/remote-jobs
 ```
 
+### `frontend/.env.local`
 
+```env
+NEXT_PUBLIC_API_URL=http://localhost:5000
+```
 
-\---
+## API
 
+### `POST /analyze`
 
-
-\## 📡 API Endpoint
-
-
-
-\### Analyze Resume
-
-
-
-\*\*POST\*\* `/analyze`
-
-
-
-\### Example Request Body
-
-
+Request body:
 
 ```json
-
 {
-
-&#x20; "resumeText": "I am a computer engineering student skilled in Python, JavaScript and DSA"
-
+  "resumeText": "Computer engineering student with Python, JavaScript, and DSA experience"
 }
-
 ```
 
+## Screenshots
 
+### Landing Page
 
-\### Example Response
+`Add screenshot: docs/screenshots/home.png`
 
+### Resume Analysis Output
 
+`Add screenshot: docs/screenshots/analysis.png`
 
-```json
+### Roadmap / Recommendation State
 
-{
+`Add screenshot: docs/screenshots/roadmap.png`
 
-&#x20; "result": "Detailed AI-generated resume analysis..."
+## Demo Notes
 
-}
+- Live frontend link: `Add Vercel URL here`
+- Backend API is live on Render: `https://ai-career-copilot-45sc.onrender.com`
 
-```
+## Future Improvements
 
+- Resume upload with PDF parsing
+- ATS scoring and resume rewrite suggestions
+- Role-specific guidance flows
+- Better state persistence and user sessions
+- Richer job-market alignment signals
 
+## License
 
-\---
-
-
-
-\## 📸 Screenshots
-
-
-
-\### Home Page
-
-\_Add screenshot here\_
-
-
-
-\### AI Analysis Output
-
-\_Add screenshot here\_
-
-
-
-\### Backend Running
-
-\_Add screenshot here\_
-
-
-
-\---
-
-
-
-\## 🚀 Deployment Links
-
-
-
-\### Backend
-
-\[Live Backend API](https://ai-career-copilot-45sc.onrender.com)
-
-
-
-\### Frontend
-
-\_Add your Vercel frontend link here\_
-
-
-
-\---
-
-
-
-\## 🏆 Why This Project Stands Out
-
-
-
-Unlike traditional resume checkers, \*\*AI Career Copilot\*\* doesn’t just point out problems.
-
-
-
-It also tells users:
-
-
-
-\- what they are already good at
-
-\- what they should improve
-
-\- what interview questions to prepare
-
-\- what projects to build
-
-\- what roadmap to follow
-
-
-
-\### USP:
-
-> \*\*An AI-powered personal career mentor for students and freshers\*\*
-
-
-
-\---
-
-
-
-\## 📈 Future Scope
-
-
-
-This project can be expanded into:
-
-
-
-\- AI Placement Assistant for colleges
-
-\- Full ATS Resume Platform
-
-\- Interview Practice Assistant
-
-\- Career Roadmap Dashboard
-
-\- Student Employability SaaS Tool
-
-
-
-\---
-
-
-
-\## 👨‍💻 Author
-
-
-
-\*\*Tauqeer Bharde\*\*
-
-
-
-\---
-
-
-
-\## 📜 License
-
-
-
-This project is built for learning, innovation, and hackathon submission purposes.
+Built for learning, experimentation, portfolio growth, and hackathon-style product development.
