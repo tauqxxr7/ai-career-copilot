@@ -23,14 +23,25 @@ AI Career Copilot is a full-stack AI product that turns a resume or profile summ
 
 ## Features
 
+- Resume analysis UI for pasting profile summaries and resume-style intros
 - Resume and profile analysis
+- ATS readiness section for quick resume-fit feedback
+- Analysis result output with structured guidance
 - Strength and weakness identification
 - Skill-gap detection
-- Technical and behavioral interview preparation
+- Technical and behavioral interview question generation
+- Google Gemini AI integration for analysis and recommendations
 - 3-month roadmap generation
 - Project recommendations
 - External job-data enrichment using Remotive Jobs API
 
+## 📸 Screenshots
+
+### Resume Input & Feature Overview
+![AI Career Copilot Resume Input](screenshots/home-resume-input.png)
+
+### Analysis Result
+![AI Career Copilot Analysis Result](screenshots/analysis-result.png)
 ## Tech Stack
 
 ### Frontend
