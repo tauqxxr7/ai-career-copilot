@@ -21,11 +21,16 @@ Students and freshers often know how to code but struggle to convert that into a
 
 AI Career Copilot is a full-stack AI product that turns a resume or profile summary into practical next steps. It analyzes strengths and gaps, suggests interview preparation, recommends projects, and generates a focused growth roadmap.
 
+- Built with frontend/backend separation.
+- Uses API-based GenAI integration through Gemini.
+- Structured for future ATS scoring, roadmap generation, and interview-prep expansion.
+- Designed to be deployable on Vercel + Render.
+
 ## Features
 
 - Resume analysis UI for pasting profile summaries and resume-style intros
 - Resume and profile analysis
-- ATS readiness section for quick resume-fit feedback
+- ATS readiness section with AI-powered foundational analysis and ATS scoring planned
 - Analysis result output with structured guidance
 - Strength and weakness identification
 - Skill-gap detection
@@ -38,10 +43,15 @@ AI Career Copilot is a full-stack AI product that turns a resume or profile summ
 ## 📸 Screenshots
 
 ### Resume Input & Feature Overview
+Paste a resume or intro and trigger AI-powered analysis through a clean product interface.
+
 ![AI Career Copilot Resume Input](screenshots/home-resume-input.png)
 
 ### Analysis Result
+Structured output showing resume insights, backend validation, and the current analysis response flow.
+
 ![AI Career Copilot Analysis Result](screenshots/analysis-result.png)
+
 ## Tech Stack
 
 ### Frontend
@@ -174,6 +184,9 @@ NEXT_PUBLIC_API_URL=http://localhost:5000
 ## Author
 
 Built by **Tauqeer Bharde** as part of a broader AI and full-stack portfolio focused on deployability, maintainability, and user experience.
+
+- GitHub: `https://github.com/tauqxxr7`
+- LinkedIn: `https://www.linkedin.com/in/tauqeer-sameer-85b868235`
 
 ## Suggested GitHub Topics
 
